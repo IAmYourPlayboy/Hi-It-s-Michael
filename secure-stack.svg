@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 220" role="img" aria-labelledby="title desc">
+  <title id="title">Secure Stack achievement badge</title>
+  <desc id="desc">A glossy 3D achievement badge with neon rings and a shield check icon.</desc>
+  <defs>
+    <filter id="softShadow" x="-30%" y="-25%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="18" stdDeviation="12" flood-color="#070d19" flood-opacity=".46"/>
+      <feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#ffffff" flood-opacity=".17"/>
+    </filter>
+    <filter id="innerGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <linearGradient id="body" x1="24" x2="160" y1="16" y2="202" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3e495f"/>
+      <stop offset=".37" stop-color="#151b2a"/>
+      <stop offset="1" stop-color="#050712"/>
+    </linearGradient>
+    <radialGradient id="face" cx="38%" cy="26%" r="75%">
+      <stop stop-color="#596782"/>
+      <stop offset=".52" stop-color="#151d2d"/>
+      <stop offset="1" stop-color="#050712"/>
+    </radialGradient>
+    <linearGradient id="shine" x1="45" x2="138" y1="18" y2="118" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity=".58"/>
+      <stop offset=".35" stop-color="#ffffff" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ringA" x1="42" x2="140" y1="30" y2="130" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00e1ff"/>
+      <stop offset=".48" stop-color="#7c5cff"/>
+      <stop offset="1" stop-color="#ff4fd8"/>
+    </linearGradient>
+    <linearGradient id="ringB" x1="45" x2="134" y1="130" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#25ff9a"/>
+      <stop offset=".5" stop-color="#a6ff5d"/>
+      <stop offset="1" stop-color="#fff36a"/>
+    </linearGradient>
+    <linearGradient id="ringC" x1="56" x2="128" y1="44" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff4f8b"/>
+      <stop offset=".5" stop-color="#ff8b5a"/>
+      <stop offset="1" stop-color="#ffd86a"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="8" width="140" height="192" rx="36" fill="url(#body)" filter="url(#softShadow)"/>
+  <ellipse cx="90" cy="188" rx="47" ry="12" fill="#000" opacity=".34"/>
+  <circle cx="90" cy="86" r="60" fill="url(#face)"/>
+  <circle cx="90" cy="86" r="57" fill="none" stroke="#ffffff" stroke-opacity=".13" stroke-width="1.5"/>
+  <circle cx="90" cy="86" r="48" fill="none" stroke="url(#ringA)" stroke-width="10" stroke-linecap="round" stroke-dasharray="271 302" transform="rotate(-90 90 86)" filter="url(#innerGlow)"/>
+  <circle cx="90" cy="86" r="35" fill="none" stroke="url(#ringB)" stroke-width="9" stroke-linecap="round" stroke-dasharray="187 220" transform="rotate(-90 90 86)" filter="url(#innerGlow)"/>
+  <circle cx="90" cy="86" r="23" fill="none" stroke="url(#ringC)" stroke-width="8" stroke-linecap="round" stroke-dasharray="111 145" transform="rotate(-90 90 86)" filter="url(#innerGlow)"/>
+  <path d="M56 49c15-26 56-32 82-7 5 5 1 13-6 11-25-8-49-3-71 12-8 5-12-8-5-16z" fill="url(#shine)" opacity=".76"/>
+  <path d="M90 57 116 68v21c0 18-10 31-26 39-16-8-26-21-26-39V68z" fill="#ecf8ff" stroke="#b8d7ff" stroke-width="2"/>
+  <path d="m78 89 9 9 17-22" fill="none" stroke="#18c983" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M71 70c13 4 26 4 39 0v12c-12 5-26 5-39 0z" fill="#a2c8ff" opacity=".35"/>
+  <text x="90" y="158" fill="#f7faff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" text-anchor="middle" letter-spacing="0">Secure Stack</text>
+  <text x="90" y="178" fill="#a5adc9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0">HARDENED BUILD</text>
+  <path d="M44 197h92" stroke="#ffffff" stroke-opacity=".08" stroke-width="1"/>
+</svg>
